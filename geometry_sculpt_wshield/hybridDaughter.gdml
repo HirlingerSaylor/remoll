@@ -468,7 +468,7 @@
 
 <solids>
     <cone aunit="deg" deltaphi="360" lunit="mm" name="dscyl_1" rmax1="COLL1_R4_U" rmax2="COLL1_R4_D" rmin1="COLL1_R1_U" rmin2="COLL1_R1_D" startphi="0" z="COLL1_THICK"/>
-    <box lunit="mm" name="COIL_BOX"  x="1000/sqrt(2)" y="1000/sqrt(2)" z="7865.68"/>
+    <box lunit="mm" name="COIL_BOX_1"  x="1000/sqrt(2)" y="1000/sqrt(2)" z="9865.68"/>
     <box lunit="mm" name="COIL_BOX_2"  x="1000/sqrt(2)" y="1000/sqrt(2)" z="7865.68"/>
 
     <box lunit="cm" name="SEGMENT_X"  x="HEIGHT_X" y="WIDTH_X" z="seg_length_X"/>
@@ -525,7 +525,7 @@
 
 
     <intersection name ="dscoilunion_0">
-        <first ref="COIL_BOX"/>
+        <first ref="COIL_BOX_1"/>
         <second ref="SEGMENT_X"/>
         <positionref ref="posCOIL_X"/>
         <rotationref ref="RotateCOIL_X"/>
